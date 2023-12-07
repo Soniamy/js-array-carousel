@@ -1,0 +1,74 @@
+:root {
+    --wrapper-width: 1400px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CAROUSEL */
+/* ------------------------------------------------------ */
+.container-carousel {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-slider {
+    height: 600px;
+    display: flex;
+}
+
+.item-active {
+    width: 700px;
+    height: 600px;
+    display: block;
+}
+
+.item-active img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item {
+    width: 700px;
+    height: 600px;
+    display: none;
+}
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ------------------------------------------------------ */
+/* BUTTON */
+/* ------------------------------------------------------ */
+
+.btn-csm {
+    width: 24px;
+    aspect-ratio: 1/1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.btn-up {
+    top: 25px;
+}
+
+.btn-down {
+    bottom: 25px;
+}
