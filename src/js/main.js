@@ -14,6 +14,7 @@ const imgArray = [
 
 const $btnUp = document.querySelector('.btn-up');
 const $btnDown = document.querySelector('.btn-down');
+const $btnStop = document.querySelector('.btn-stop');
 let immagineAttualmenteVisibile = 0;
 
 // -----------------------------------------------
@@ -56,5 +57,8 @@ $btnUp.addEventListener('click', function () {
 });
 
 $btnDown.addEventListener('click', btnDown);
+$btnStop.addEventListener('click', function () {
+    clearInterval(stop);
+});
 
-setInterval(btnDown, 2000);
+let stop = setInterval(btnDown, 2000);

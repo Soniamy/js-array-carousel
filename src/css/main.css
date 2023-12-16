@@ -71,3 +71,10 @@
 .btn-down {
     bottom: 25px;
 }
+.btn-stop {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateX(-50%);
+    padding: 10px 10px;
+}
